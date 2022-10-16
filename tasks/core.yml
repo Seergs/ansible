@@ -1,0 +1,7 @@
+- name: Install core packages
+  become: true
+  apt:
+    name: ["build-essential", "cmake", "pkg-config", "ninja-build", "gettext", "libtool", "libtool-bin", "autoconf", "automake", "g++", "unzip", "curl", "doxygen"]
+  tags: 
+    - core
+    - neovim

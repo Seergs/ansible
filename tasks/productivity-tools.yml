@@ -1,0 +1,5 @@
+- name: Install productivity packages
+  become: true
+  apt:
+    name: ["tmux", "fzf", "jq", "ripgrep"]
+  tags: productivity
